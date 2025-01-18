@@ -1,0 +1,114 @@
+/* Om en undersida behöver egen CSS (som endast gäller den) kan du ha den i en skild fil */
+/*body {
+    background-image: url("https://www.crushpixel.com/big-static7/preview4/classic-casino-roulette-57992.jpg");
+    height: 100%;
+    width: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://c4.wallpaperflare.com/wallpaper/538/766/446/gambling-roulette-wheel-wallpaper-preview.jpg");
+    background-size: cover;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background-color: brown;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    border-radius: 10px;
+    width: fit-content;
+
+}
+
+#sspGame {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    border-radius: 10px;
+}
+
+
+#label {
+    font-size: 25px;
+}
+
+#money {
+    text-align: center;
+    width: 125px;
+    height: 50px;
+    font-size: 25px;
+    margin: 2%;
+}
+
+#submit {
+    height: 50px;
+    width: 110px;
+    font-size: 25px;
+}
+
+#gameMoney {
+    background-color: rgb(116, 30, 30);
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+}
+
+#game {
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    margin: 3%;
+}*/
+
+/*.button {
+    text-align: center;
+}*/
+
+#btn1 {
+    display: none;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 10px;
+    padding: 8px;
+}
+
+#btn2 {
+    display: none;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 10px;
+    padding: 8px;
+}
+
+#btn3 {
+    display: none;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 10px;
+    padding: 8px;
+}
+
+/*#playAgain {
+    text-align: center;
+    display: none;
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    margin-bottom: 3%;
+}
+
+#moreMoney {
+    width: 150px;
+    text-align: center;
+}*/

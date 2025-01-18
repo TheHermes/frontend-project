@@ -1,0 +1,117 @@
+body {
+    background-image: url("https://www.crushpixel.com/big-static7/preview4/classic-casino-roulette-57992.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://c4.wallpaperflare.com/wallpaper/538/766/446/gambling-roulette-wheel-wallpaper-preview.jpg");
+    height: 100%;
+    background-size: cover;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-size: 40;
+    padding-top: 1%;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+#container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+    margin-bottom: 1%;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+#container1> img {
+    cursor: pointer;
+    margin: auto;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.card {
+    height: 120px;
+    width: 95px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px black solid;
+    transition: .3s;
+    border-radius: 10px;
+    transform: none;
+}
+ 
+.card:hover  {
+    cursor: pointer;
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+#winInfo {
+    text-align: center;
+    height: auto;
+    width: auto;
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#win {
+    color: white;
+    font-size: 70px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 2%;
+    justify-content: center;
+    align-items: center;
+}
+#clicks {
+    font-size: 25px;
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+#reset {
+    display: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: center;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: auto;
+    text-align: center;
+    font-size: 25px;
+}
+
+#memoryContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    margin-bottom: 1%;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+#gameContainer {
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+    background-color: brown;
+}
+
+#moreMoney {
+    width: 30px;
+    text-align: center;
+}
+

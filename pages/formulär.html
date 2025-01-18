@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="icon" href="../assets/images/Casino_Chip.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bakgrund-färg1 ">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">Casino Helsinki</a>
+            <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon  bg-dark text-light pt-1">☰</span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-5">
+                        <a class="btn btn-outline-dark sm-btn-lg bg-dark text-light" href="../index.html">Hem</a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="intro" class="justify-content-center align-items-center">
+        <div class="container justify-content-center p-5">
+            <div class="text-light lead d-flex " id="nav"></div>
+            <div class="text-light lead d-flex" id="nav2"></div>
+            <div class="text-light lead d-flex" id="nav3"></div>
+            <div class="text-light lead d-flex" id="nav4"></div>
+            <select name="Veckodag" class="btn btn-outline-light sm-btn-lg bg-dark text-light my-3" id="veckodag">
+                <option value="default" id="default">default</option>
+                <option value="måndag" id="måndag">Måndag</option>
+                <option value="tisdag" id="tisdag">Tisdag</option>
+                <option value="onsdag" id="onsdag">Onsdag</option>
+                <option value="torsdag" id="torsdag">Torsdag</option>
+                <option value="fredag" id="fredag">Fredag</option>
+                <option value="lördag" id="lördag">Lördag</option>
+                <option value="söndag" id="söndag">Söndag</option>
+            </select>
+
+            <select name="bakgrund" id="bakgrund" class="bg-dark text-light btn btn-outline-light sm-btn-lg">
+                <option value="#36454F">Välj bakgrund -- Mörk</option>
+                <option value="#39c9bb" id="mörk">-- Blå</option>
+                <option value="#FFC0CB" id="ljus">-- Ljusröd</option>
+                <option value="#a9a9a9" id="suddig">-- Grå</option>
+            </select>
+        
+
+            <input type="text" id="box" value="rgb(255, 255, 255)">
+            <input type="range" class="p-0 my-2" id="red" value="255" min="0" max="255">
+            <input type="range" class="p-0 my-2" id="green" value="255" min="0" max="255">
+            <input type="range" class="p-0 my-2" id="blue" value="255" min="0" max="255">
+        </div>
+        <div class="bakgrund-färg2 p-5 rounded container d-flex justify-content-center align-items-center">
+            <div class="justify-content-center row bg-dark rounded align-items-center p-5 d-flex w-50">
+                <h2 id="stängt" class="text-färg1 text-center p-5 fw-bold">Logga in och vinn stort!!! <b></b> Dags att bli rik! &#128178&#128178&#128178</h2>
+                <div class="h-100 text-färg2 d-flex justify-content-center">
+                    <input class="p-1 text-center" id="förnamn" placeholder="Förnamn" type="text">
+                    <input class="p-1 text-center" id="efternamn" placeholder="Efternamn" type="text">
+                    <input type="button" class="p-1 bg-danger btn-outline-danger hover-overlay rounded text-light" id="nameBtn" onclick="minFunktion()" value="Bekräfta"> 
+                    <div class="lead text-light" id="hello-output"></div>
+                </div>
+                <div class=" d-flex justify-content-center">
+                    <input class="p-1 text-center" id="age" placeholder="Ange ålder">
+                    <input type="button" class="p-1 bg-danger btn-outline-danger hover-overlay rounded text-light" id="ageBtn" onclick="ageInput()" value="Bekräfta">
+                    <div class="lead text-light" id="age-output"></div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <input class="p-1 text-center" id="money" placeholder="Ange saldo">
+                    <input type="button" class="p-1 bg-danger btn-outline-danger hover-overlay rounded text-light" id="moneyBtn" onclick="moneyInput()" value="Bekräfta">
+                    <div class="lead text-light" id="money-output"></div>
+                </div>
+                <div class="container align-items-center" id="timeContainer">
+                    <select class="bg-dark text-light d-flex justify-content-center btn btn-outline-light sm-btn-lg" id="sel"></select><br>
+                    <span class="text-light" id="timerOut"></span><br>
+                    <span class="text-light" id="playTimeEnd"></span>
+                    <div id="börja-spela">
+                        <a id="nextButton" class="btn text-light bg-danger sm-btn-lg my-4" href="./test.html">Börja
+                            spela</a>
+                    </div>
+                </div>
+              
+            </div>
+
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <script src="../assets/js/cookie.js"></script>
+    <script src="../assets/js/framsida.js"></script>
+    <script src="../assets/js/timer.js"></script>
+</body>
+
+
+</html>

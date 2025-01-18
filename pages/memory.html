@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/images/Casino_Chip.svg" type="image/x-icon">
+
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="../assets/css/memory.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/test.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bakgrund-färg1 ">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">Casino Helsinki</a>
+            <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon  bg-dark text-light pt-1">☰</span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="intro" class="justify-content-center align-items-center">
+        <div class="container justify-content-center p-5">
+            <div class="text-light lead d-flex " id="nav"></div>
+            <div class="text-light lead d-flex" id="nav2"></div>
+            <div class="text-light lead d-flex" id="nav3"></div>
+            <div class="text-light lead d-flex" id="nav4"></div>
+            <div class="lead d-flex" id="timeContainer">
+                <select id="sel"></select>
+                <div class="text-light lead d-flex" id="timerOut"></div>
+                <div class="text-light lead d-flex" id="playTimeEnd"></div>
+            </div>
+            <select name="Veckodag" class="btn btn-outline-light sm-btn-lg bg-dark text-light my-3" id="veckodag">
+                <option value="default" id="default">default</option>
+                <option value="måndag" id="måndag">Måndag</option>
+                <option value="tisdag" id="tisdag">Tisdag</option>
+                <option value="onsdag" id="onsdag">Onsdag</option>
+                <option value="torsdag" id="torsdag">Torsdag</option>
+                <option value="fredag" id="fredag">Fredag</option>
+                <option value="lördag" id="lördag">Lördag</option>
+                <option value="söndag" id="söndag">Söndag</option>
+            </select>
+
+            <select name="bakgrund" id="bakgrund" class="bg-dark text-light btn btn-outline-light sm-btn-lg">
+                <option value="#36454F">Välj bakgrund -- Mörk</option>
+                <option value="#39c9bb" id="mörk">-- Blå</option>
+                <option value="#FFC0CB" id="ljus">-- Ljusröd</option>
+                <option value="#a9a9a9" id="suddig">-- Grå</option>
+            </select>
+        
+            <input type="text" id="box" value="rgb(255, 255, 255)">
+            <input type="range" class="p-0 my-2" id="red" value="255" min="0" max="255">
+            <input type="range" class="p-0 my-2" id="green" value="255" min="0" max="255">
+            <input type="range" class="p-0 my-2" id="blue" value="255" min="0" max="255">
+        </div>
+
+        <div id="memoryContainer" class="bakgrund-färg2 pb-5 pl-5 pr-5">
+            <h1 class="text-färg1 text-färg2">Minnes Spel</h1>
+
+            <div id="winInfo">
+                <div id="win"></div>
+                <div id="clicks"></div>
+                <input id="reset" type="button" value="Spela igen?">
+            </div>
+            <div id="container1"></div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="../assets/js/cookie.js"></script>
+    <script src="../assets/js/memory.js"></script>
+    <script src="../assets/js/framsida.js"></script>
+    <script src="../assets/js/meny.js"></script>
+    <script src="../assets/js/timer.js"></script>
+
+
+</body>
+
+</html>

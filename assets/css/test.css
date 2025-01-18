@@ -1,0 +1,15 @@
+#timeContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin:0;
+
+}
+
+#timerOut {
+    margin: 0;;
+}
+
+#sel {
+    display: none;
+}
